@@ -8,7 +8,7 @@ const initialState: AstrologersState = {
     name: '',
     focuses: [],
     specializations: [],
-    status: undefined,
+    status: 0,
   },
   orderByKey: 'status',
   orderByValue: 'DESC',

@@ -5,7 +5,7 @@ export interface Filters {
   name: string;
   focuses: number[];
   specializations: number[];
-  status?: number;
+  status: number;
 }
 
 export type AstrologersState = {

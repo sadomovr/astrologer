@@ -112,6 +112,10 @@ export const getSortedAstrologers = (
 
 // Transfers the value 0 / 1 from the MUI selector to online / offline status
 export const statusConverter = (status: number) => {
+  if (!status) {
+    return 'all';
+  }
+
   if (status === 1) {
     return 'online';
   }

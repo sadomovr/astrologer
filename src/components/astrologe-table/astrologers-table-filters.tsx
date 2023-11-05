@@ -88,8 +88,8 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
 
       <FormControl fullWidth>
         <Typography>Status</Typography>
-        <Select name='status' onChange={handleChange} value={filters.status}>
-          <MenuItem value={undefined}>All</MenuItem>
+        <Select name='status' id='1' onChange={handleChange} value={filters.status}>
+          <MenuItem value={0}>All</MenuItem>
           <MenuItem value={1}>Online</MenuItem>
           <MenuItem value={2}>Offline</MenuItem>
         </Select>
