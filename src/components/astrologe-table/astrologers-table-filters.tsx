@@ -3,16 +3,20 @@ import { RootState } from '../../store';
 import {
   Box,
   FormControl,
-  Input,
-  InputLabel,
   MenuItem,
   Select,
   SelectChangeEvent,
+  TextField,
+  Typography,
 } from '@mui/material';
 import { ChangeEvent } from 'react';
+import Paper from '@mui/material/Paper';
 
 type AstrologersTableFilters = {
-  handleUpdateFilters: (key: string, values: string | number | number[] | undefined) => void;
+  handleUpdateFilters: (
+    key: string,
+    values: string | number | number[] | string[] | undefined,
+  ) => void;
 };
 
 export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTableFilters) => {
@@ -24,17 +28,29 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
     handleUpdateFilters(event.target.name, event.target.value);
   };
 
+  const handleChangeMultiple = (event: SelectChangeEvent<(string | number)[]>) => {
+    console.log(event.target.value);
+    if (event.target.value.includes('all')) {
+      handleUpdateFilters(event.target.name, []);
+
+      return;
+    }
+
+    handleUpdateFilters(event.target.name, event.target.value as number[]);
+  };
+
   const handleChangeName = (event: ChangeEvent<HTMLInputElement>) => {
     handleUpdateFilters(event.target.name, event.target.value);
   };
 
   return (
-    <Box display='flex' justifyContent='space-between' gap='20px'>
+    <Box component={Paper} display='flex' justifyContent='space-between' gap='20px' padding='15px'>
       <FormControl fullWidth>
-        <InputLabel id='input-name'>Name</InputLabel>
-        <Input
+        <Typography>Name</Typography>
+        <TextField
           type='text'
           name='name'
+          variant='outlined'
           placeholder='Search by name'
           value={filters.name}
           onChange={handleChangeName}
@@ -42,14 +58,9 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
       </FormControl>
 
       <FormControl fullWidth>
-        <InputLabel id='select-focuses'>Focuses</InputLabel>
-        <Select
-          name='focuses'
-          onChange={handleChange}
-          labelId='select-focuses'
-          value={filters.focuses}
-          multiple
-        >
+        <Typography>Focuses</Typography>
+        <Select name='focuses' onChange={handleChangeMultiple} value={filters.focuses} multiple>
+          <MenuItem value='all'>All</MenuItem>
           {availableFocuses.map((item) => (
             <MenuItem key={item.id} value={item.id}>
               {item.name}
@@ -59,14 +70,14 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
       </FormControl>
 
       <FormControl fullWidth>
-        <InputLabel id='select-specializations'>Specializations</InputLabel>
+        <Typography>Specializations</Typography>
         <Select
           name='specializations'
-          onChange={handleChange}
-          labelId='select-specializations'
+          onChange={handleChangeMultiple}
           value={filters.specializations}
           multiple
         >
+          <MenuItem value='all'>All</MenuItem>
           {availableSpecializations.map((item) => (
             <MenuItem key={item.id} value={item.id}>
               {item.name}
@@ -76,14 +87,9 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
       </FormControl>
 
       <FormControl fullWidth>
-        <InputLabel id='select-status'>Status</InputLabel>
-        <Select
-          name='status'
-          onChange={handleChange}
-          labelId='select-status'
-          value={filters.status}
-        >
-          <MenuItem value={undefined}>Status</MenuItem>
+        <Typography>Status</Typography>
+        <Select name='status' onChange={handleChange} value={filters.status}>
+          <MenuItem value={undefined}>All</MenuItem>
           <MenuItem value={1}>Online</MenuItem>
           <MenuItem value={2}>Offline</MenuItem>
         </Select>

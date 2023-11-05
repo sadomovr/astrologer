@@ -3,7 +3,7 @@ import { AstrologersTable } from './astrologe-table';
 
 export function App() {
   return (
-    <Container>
+    <Container maxWidth='xl' sx={{ marginTop: '25px' }}>
       <AstrologersTable />
     </Container>
   );

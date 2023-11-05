@@ -7,12 +7,16 @@ import { AstrologersTableHeader } from './astrologers-table-header.tsx';
 import { AstrologersTableFilters } from './astrologers-table-filters.tsx';
 import { astrologersAction } from '../../store/astrologers';
 import { getFilteredAndSortedAstrologers } from '../../store/astrologers/astrologers.selector.ts';
+import { Box } from '@mui/material';
 
 export function AstrologersTable() {
   const astrologersList = useSelector(getFilteredAndSortedAstrologers);
   const dispatch = useDispatch();
 
-  const handleUpdateFilters = (key: string, value: string | number | number[] | undefined) => {
+  const handleUpdateFilters = (
+    key: string,
+    value: string | number | number[] | string[] | undefined,
+  ) => {
     dispatch({
       type: astrologersAction.UPDATE_FILTER,
       payload: { key, value },
@@ -34,7 +38,7 @@ export function AstrologersTable() {
   };
 
   return (
-    <div>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
       <AstrologersTableFilters handleUpdateFilters={handleUpdateFilters} />
       <TableContainer component={Paper}>
         <Table>
@@ -45,6 +49,6 @@ export function AstrologersTable() {
           />
         </Table>
       </TableContainer>
-    </div>
+    </Box>
   );
 }

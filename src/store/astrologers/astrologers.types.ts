@@ -21,7 +21,7 @@ interface UpdateFiltersAction {
   type: astrologersAction.UPDATE_FILTER;
   payload: {
     key: keyof Filters;
-    value: string | number[];
+    value: string | (number | undefined)[];
   };
 }
 
