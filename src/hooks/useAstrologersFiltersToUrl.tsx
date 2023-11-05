@@ -14,7 +14,7 @@ export const useAstrologersFiltersToUrl = (
     if (filters.focuses.length) {
       queryParams.set('focuses', filters.focuses.join(','));
     }
-    if (filters.specializations) {
+    if (filters.specializations.length) {
       queryParams.set('specializations', filters.specializations.join(','));
     }
     if (filters.status) {
