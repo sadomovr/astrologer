@@ -8,7 +8,7 @@ const initialState: AstrologersState = {
     name: '',
     focuses: [],
     specializations: [],
-    status: '',
+    status: undefined,
   },
   orderBy: 'status',
   availableSpecializations: getUniqueSpecializations(astro.data),

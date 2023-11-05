@@ -1,9 +1,10 @@
-import { useSelector } from 'react-redux';
 import { Container } from '@mui/material';
-import { RootState } from '../store';
+import { AstrologersTable } from './astrologe-table';
 
 export function App() {
-  const data = useSelector<RootState>((state) => state.astrologers.data);
-
-  return <Container>Astrologers Table</Container>;
+  return (
+    <Container>
+      <AstrologersTable />
+    </Container>
+  );
 }

@@ -1,1 +1,1 @@
-export { AstrologerTable } from './astrologers-table.tsx';
+export { AstrologersTable } from './astrologers-table.tsx';

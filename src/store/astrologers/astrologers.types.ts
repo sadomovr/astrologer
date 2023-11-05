@@ -3,9 +3,9 @@ import { Astrologer } from '../../shared/types/astrologer.ts';
 
 export interface Filters {
   name: string;
-  focuses: { id: number; name: string }[];
-  specializations: { id: number; name: string }[];
-  status: string;
+  focuses: number[];
+  specializations: number[];
+  status?: number;
 }
 
 export type AstrologersState = {
@@ -18,14 +18,20 @@ export type AstrologersState = {
 
 interface UpdateFiltersAction {
   type: astrologersAction.UPDATE_FILTER;
+  payload: {
+    key: keyof Filters;
+    value: string | number[];
+  };
 }
 
 interface UpdateSortingAction {
   type: astrologersAction.UPDATE_SORTING;
+  payload: AstrologersState['orderBy'];
 }
 
 interface DeleteAstrologerAction {
   type: astrologersAction.DELETE_ASTROLOGER;
+  payload: string;
 }
 
 export type AstrologersAction = UpdateFiltersAction | DeleteAstrologerAction | UpdateSortingAction;
