@@ -1,0 +1,1525 @@
+{
+    "data": [
+        {
+            "id": "d8589cf0-5ca2-4437-9a1f-d6fe9325460a",
+            "name": "Phobos",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_d8589cf0-5ca2-4437-9a1f-d6fe9325460a.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_d8589cf0-5ca2-4437-9a1f-d6fe9325460a.jpg",
+            "slogan": "Clarity is the key to understanding",
+            "description": "I am blessed to help people who get stuck in their lives. I have been helping people for over a decade, letting them achieve their desired goals efficiently. All you need is some help and assistance, just a little support. All you need is a different strategy, approach, or plan of action to make some adjustments that will open up the key to a whole new future that will give you access to the unlimited power you have within yourself. Then you have that good Guide, Coach, and Friend. Allow me to help you know how to plan your journey. Let’s talk today and unfold the mysteries.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 23,
+            "feedback_count": 6861,
+            "review_count": 279,
+            "total_orders": 13723,
+            "sort_order": 1877,
+            "joined_time": 1645292031,
+            "focuses": [
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 6,
+                    "name": "Family"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 2,
+                    "name": "Numerology"
+                },
+                {
+                    "id": 34,
+                    "name": "Spellcasting"
+                },
+                {
+                    "id": 36,
+                    "name": "Spiritual healing"
+                },
+                {
+                    "id": 40,
+                    "name": "Devine power activation"
+                },
+                {
+                    "id": 42,
+                    "name": "Chakras healing"
+                },
+                {
+                    "id": 43,
+                    "name": "Love spell"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 275,
+            "supply_type": {
+                "id": 1,
+                "type": "inhouse supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 25,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 2.99,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "offline"
+        },
+        {
+            "id": "cb7493e5-d2c7-412e-88a6-a84bde8e97cb",
+            "name": "Miss Alice",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_cb7493e5-d2c7-412e-88a6-a84bde8e97cb.png",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_cb7493e5-d2c7-412e-88a6-a84bde8e97cb.png",
+            "slogan": "I can tune into any love situation, I make sure to tell you every aspect and every detail of what's going on in your relationship matters, career, soulmate connections.",
+            "description": "I'm helping people over the years, I can help you to know what's stored ahead for you in destiny and if is there a future ahead with someone using my Spiritual energies. Help you with common issues such as love and relationships, career, soulmate connections, dating issues, cheating and affairs, parenting, and family. I can give you information that will help you understand your current needs, emotions, intentions, thoughts, and feelings. I will help you help yourself and the loved ones around you.\r\nFurthermore, I have done relationship adding and psychic readings professionally and for pleasure for many years. Not only that, but I've helped people get clarity in all love and relationship situations. \r\nI feel and believe I have been given wonderful gifts by the Universe to help you all. I aim to help and show you the correct path. Experienced in psychic reading, tarot, spiritual meditation, meditation therapy, and astrology.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 10,
+            "feedback_count": 845,
+            "review_count": 43,
+            "total_orders": 5796,
+            "sort_order": 3767,
+            "joined_time": 1669193681,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 4,
+                    "name": "Psychic"
+                },
+                {
+                    "id": 25,
+                    "name": "General Astrology"
+                },
+                {
+                    "id": 44,
+                    "name": "Relationship expert"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 275,
+            "supply_type": {
+                "id": 1,
+                "type": "inhouse supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 16.99,
+                    "limit": 10,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 6.49,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "a6dc92c5-072c-4b55-8278-4771037146eb",
+            "name": "Miss Patricia",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_db0e4998-9371-4ca2-9a92-4bec05ad1535_1676623108.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_db0e4998-9371-4ca2-9a92-4bec05ad1535_1676623108.jpg",
+            "slogan": "Find love in your life!",
+            "description": "Whether you're wondering about an unfaithful partner or whether there is any interest in your relationship, I am here to offer answers and knowledge that will help you move forward. Additionally, I can assist with parental concerns, money and career problems, and financial aspirations. My expertise lies in astrology, psychics, and tarot readings.  I rely on my intuitive gifts from the Universe to guide individuals in all facets of life.",
+            "description_experience": "Greetings! I am a professional Tarot Card Reader, Spiritual Healer, and Numerologist. I have been doing readings for 10 years, guiding with matters about love life, sorrow, anger, doubts, and relationship issues. I had counseled many people from different parts of the country. I always take guidance from angels who connect me with the divine powers and help me to see through the lives of my clients will try my best to get you all the answers you are looking for and guide you through the right path. I believe Astrology is a great tool that may benefit humanity More love and light to all.",
+            "rating": 4.9,
+            "experience": 10,
+            "feedback_count": 594,
+            "review_count": 82,
+            "total_orders": 6569,
+            "sort_order": 4507,
+            "joined_time": 1676623193,
+            "focuses": [
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 21,
+                    "name": "Love spell"
+                },
+                {
+                    "id": 28,
+                    "name": "Relationship expert"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 1,
+                    "name": "Life"
+                },
+                {
+                    "id": 33,
+                    "name": "Love back rituals"
+                },
+                {
+                    "id": 44,
+                    "name": "Relationship expert"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 275,
+            "supply_type": {
+                "id": 1,
+                "type": "inhouse supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 9.99,
+                    "limit": 25,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 3.99,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "4b945151-4422-43ed-80e5-9a039204e17a",
+            "name": "Oracle Gustav",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_4b945151-4422-43ed-80e5-9a039204e17a.png",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_4b945151-4422-43ed-80e5-9a039204e17a.png",
+            "slogan": "I can find answers to all your questions such as relationships, career, or any other life issues with my psychic abilities, I will give you honest answers.",
+            "description": "I have been doing readings for YEARS. \r\nI’m here to guide you through any issues involving your love life and any negative emotions such as sorrow, anger, doubts, and issues related to relationships and love. Whether your partner is having an affair or is not interested, I can tell you what is going on; giving you the power and knowledge to take the proper actions going forward. Additionally, if you have parental concerns, money and career issues, or financial growth goals, I am here to shed light on all these areas. \r\nI have 25 years of experience. I specialize in astrology, psychic, and tarot readings. I use my intuitive skills and Universe-gifted powers to guide people in all aspects of life. I feel honored and pleased to help you.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 25,
+            "feedback_count": 605,
+            "review_count": 61,
+            "total_orders": 5479,
+            "sort_order": 3777,
+            "joined_time": 1669194287,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 4,
+                    "name": "Psychic"
+                },
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 275,
+            "supply_type": {
+                "id": 1,
+                "type": "inhouse supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 24.99,
+                    "limit": 10,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 9.49,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "6337563b-f2e1-4c1d-bfa0-fb4cf6ba72ae",
+            "name": "Donna78",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_6337563b-f2e1-4c1d-bfa0-fb4cf6ba72ae.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_6337563b-f2e1-4c1d-bfa0-fb4cf6ba72ae.jpg",
+            "slogan": "Sometimes we are at a crossroads and do not know what to do. I can guide you on the right path and give you peace of mind.",
+            "description": "Keep your heart open to the universe`s knowledge.",
+            "description_experience": "",
+            "rating": 4.6,
+            "experience": 9,
+            "feedback_count": 1756,
+            "review_count": 163,
+            "total_orders": 7542,
+            "sort_order": 3117,
+            "joined_time": 1663939419,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 2,
+                    "name": "Numerology"
+                },
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 38,
+                    "name": "Remedies"
+                },
+                {
+                    "id": 39,
+                    "name": "Remove third-party ritual"
+                },
+                {
+                    "id": 44,
+                    "name": "Relationship expert"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 275,
+            "supply_type": {
+                "id": 1,
+                "type": "inhouse supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 11.99,
+                    "limit": 10,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.49,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "1e5e6c5b-09e5-44fe-8bf2-94fd28be44b8",
+            "name": "Venera",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_1e5e6c5b-09e5-44fe-8bf2-94fd28be44b8.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_1e5e6c5b-09e5-44fe-8bf2-94fd28be44b8.jpg",
+            "slogan": "There is no better boat than a horoscope to help a man cross over the sea \r\nof life.",
+            "description": "If you’re here then you’re pulled to the advice that spirit guides want to share with you, using me\r\nas the messenger.\r\nSometimes when you’re in the middle of a storm, you can’t as easily hear your intuition, and \r\nthings get rocky, but with my clear mind & psychic abilities to tune into the energy around you I \r\nwill bring the clarity to your life that you’re seeking.\r\nWith all of my services I will provide valuable insight and carefully guide you to any answers you\r\nseek. I am here to tell you the truth and not just what you want to hear. The readings can be \r\nscary with how accurate they are and will reveal hidden aspects of yourself you might never \r\nhave expected to find.\r\nI will be there with you through the entire experience to help you find the highest possible \r\npathway to success in any area of your life.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 10,
+            "feedback_count": 12607,
+            "review_count": 357,
+            "total_orders": 23600,
+            "sort_order": 2317,
+            "joined_time": 1652787283,
+            "focuses": [],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 37,
+                    "name": "Rituals"
+                },
+                {
+                    "id": 38,
+                    "name": "Remedies"
+                },
+                {
+                    "id": 42,
+                    "name": "Chakras healing"
+                },
+                {
+                    "id": 43,
+                    "name": "Love spell"
+                },
+                {
+                    "id": 45,
+                    "name": "Divine power activation"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 275,
+            "supply_type": {
+                "id": 1,
+                "type": "inhouse supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 25,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 2.99,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "c8b4672d-db7f-4349-97b5-700516de8686",
+            "name": "SunSofia",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_d9e9866c-e465-43f4-9dc2-d040e0191d10_1674222288.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_d9e9866c-e465-43f4-9dc2-d040e0191d10_1674222288.jpg",
+            "slogan": "I can guarantee you that your problem will be looked at from all angles, and the advice I offer will surely improve your life.",
+            "description": "I am a second-generation Western astrologer and a published sociologist, specializing in the interplay of generational planets with the personal ones, in order to give you proper guidance in the current wider context of our society. Astrology for me is not only an esoteric discipline but also an exceptional psycho-linguistic tool, which is why it can be genuinely helpful even to complete skeptics. With a decade of experience, any questions about love, friendships, career, and spirituality are welcome, and I consider it my duty to provide an answer to them.",
+            "description_experience": "",
+            "rating": 5,
+            "experience": 5,
+            "feedback_count": 50,
+            "review_count": 257,
+            "total_orders": 2085,
+            "sort_order": 167,
+            "joined_time": 1679926641,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": "https://astrocrmmedia.obrio.net/videos/production/video_d9e9866c-e465-43f4-9dc2-d040e0191d10.mp4"
+            },
+            "user_id": 80,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 15,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.29,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "offline"
+        },
+        {
+            "id": "4b0931ab-17dc-4887-9c6f-67714926af9d",
+            "name": "Ermis",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_4b0931ab-17dc-4887-9c6f-67714926af9d_1674227717.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_4b0931ab-17dc-4887-9c6f-67714926af9d_1674227717.jpg",
+            "slogan": "Let's find the answers to your questions and help you reach your goals and aspirations!",
+            "description": "I am a Tarot card Reader and astrologer. I have 5+ years of experience and ongoing great reviews from my regular and new customers. If you need clarification/guidance on topics of love, family, wealth, work, etc., I would be more than glad to help.",
+            "description_experience": "",
+            "rating": 5,
+            "experience": 5,
+            "feedback_count": 789,
+            "review_count": 32,
+            "total_orders": 22348,
+            "sort_order": 3027,
+            "joined_time": 1663936852,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 1,
+                    "name": "Life"
+                },
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 44,
+                    "name": "Relationship expert"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 249,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 25,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.99,
+                    "limit": 1,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "offline"
+        },
+        {
+            "id": "c3b03fe7-9de9-4d79-883b-d198166e8afc",
+            "name": "Luna",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_c3b03fe7-9de9-4d79-883b-d198166e8afc_1696060009.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_c3b03fe7-9de9-4d79-883b-d198166e8afc_1696060009.jpg",
+            "slogan": "Let me and astrology be your guides to an easier life",
+            "description": "I am a certified astrologer who studied advanced astrology techniques and materials from ancient astrologers to offer you the best consultation I can give. I incorporate Hellenistic timing techniques with a modern approach to answer your questions and guide you through life.\r\n\r\nI merge my passion for astrology and compassion for people with my intuition to give you the best guidance I can. I would be very happy to answer your questions about your love life, career, education, family, health, where to live and financial status. I can help you find your path in life and tell you what your strengths and weaknesses are. I am looking forward to chatting with you.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 2,
+            "feedback_count": 125,
+            "review_count": 125,
+            "total_orders": 3579,
+            "sort_order": 287,
+            "joined_time": 1679926678,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 4,
+                    "name": "Business"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 6,
+                    "name": "Family"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 1,
+                    "name": "Life"
+                },
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                },
+                {
+                    "id": 25,
+                    "name": "General Astrology"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 93,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 15,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.99,
+                    "limit": 1,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "a372c220-b3b8-4eba-a7ad-391f64138c02",
+            "name": "Natalie",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_1077e5a2-2ffc-4ea2-99e1-046d4282119a_1674214453.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_1077e5a2-2ffc-4ea2-99e1-046d4282119a_1674214453.jpg",
+            "slogan": "I am currently open to assisting couples in trouble, souls looking for love, broken families, and anyone who is trying to find the meaning of life and your mission on Earth.",
+            "description": "Hello, my name is Natalie and I am an expert in tarot/oracle readings and astrology enthusiast. I discovered my gift quite early and it took me years of practice and learning about the occult to be ready to help others. \r\n\r\nI've been working with the cards for over 5 years, while continuously helping people to find their path, incorporating astrology knowledge and\r\nthe wisdom of the universe. I studied astrology and divination from reputable masters in the field and for a couple of years, I was working as a divination writer, creating spiritual courses, articles, and guides.",
+            "description_experience": "",
+            "rating": 5,
+            "experience": 6,
+            "feedback_count": 214,
+            "review_count": 645,
+            "total_orders": 19773,
+            "sort_order": 2387,
+            "joined_time": 1679926813,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                },
+                {
+                    "code": "es",
+                    "name": "Spanish",
+                    "native_name": "español"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 6,
+                    "name": "Occult readings"
+                },
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                },
+                {
+                    "id": 37,
+                    "name": "Rituals"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": "https://astrocrmmedia.obrio.net/videos/production/video_1077e5a2-2ffc-4ea2-99e1-046d4282119a.mp4"
+            },
+            "user_id": 339,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 1,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.29,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "3bdfa55d-1cfe-464c-85c4-1bb14a1ffc94",
+            "name": "ShaKe",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg",
+            "slogan": "Tarot for me is a tool for self-discovery, self-improvement, personal growth, and shadow work. It is technically a report card of the client's current energy, divine information of the client's life circumstances. I am work in the field of Western astrology and natal chart reading.",
+            "description": "I'm a certified astrologer, an intuitive tarot reader and an akashic records reader. I was born to a family with psychic and healing gifts. However, the gift I have is more related to astral traveling and projection. I got interested in Tarot in 2008 but a series of Tower moments pushed me into delving more into the craft. I want to eradicate the misconception against Tarot and I believe that it's not just a tool for divination and fortune-telling for the client will always have the power to create and mold the future that they dream of.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 5,
+            "feedback_count": 242,
+            "review_count": 242,
+            "total_orders": 1481,
+            "sort_order": 1097,
+            "joined_time": 1679926764,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                },
+                {
+                    "id": 14,
+                    "name": "Dream interpretation"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 5,
+                    "name": "Clairvoyance"
+                },
+                {
+                    "id": 6,
+                    "name": "Occult readings"
+                }
+            ],
+            "certificates": [
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/0_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.png"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/1_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/2_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.png"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/3_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.png"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/4_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/5_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/6_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/7_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.png"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/8_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg"
+                },
+                {
+                    "src": "https://astrocrmmedia.obrio.net/certificates/production/9_certificate_15b33002-32cf-4ddd-92b1-b85d42efff93.jpg"
+                }
+            ],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 188,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 15,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.69,
+                    "limit": 1,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "offline"
+        },
+        {
+            "id": "b99107c9-b857-4413-bb8f-26729da003c1",
+            "name": "Valderiz",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_478e1e71-54b5-4e54-b981-0a8cbf87bce8.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_478e1e71-54b5-4e54-b981-0a8cbf87bce8.jpg",
+            "slogan": "I tell you what you need to hear, and you may or may not like it. I say what needs to be said, not what wants to be heard.",
+            "description": "My clients, who range from CEOs to sex workers, refer to me as their Oracle. This is because I help my clients live a more fulfilling life by illuminating their path in ways that are both practical and magical. But this magic is just the patterns in which we all exist. Life is miraculous when you can see them. I will open your eyes.",
+            "description_experience": "",
+            "rating": 5,
+            "experience": 5,
+            "feedback_count": 50,
+            "review_count": 94,
+            "total_orders": 3497,
+            "sort_order": 1337,
+            "joined_time": 1679926768,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 4,
+                    "name": "Business"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 6,
+                    "name": "Family"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                },
+                {
+                    "id": 13,
+                    "name": "Health"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": "https://astrocrmmedia.obrio.net/videos/production/video_478e1e71-54b5-4e54-b981-0a8cbf87bce8.mp4"
+            },
+            "user_id": 212,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 15,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.99,
+                    "limit": 1,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "f02c6b8b-bf48-4209-93dd-654346ac8d3f",
+            "name": "Ameesh",
+            "astrology_type": "vedic",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_4d707ed6-7714-47a1-b623-c7494030126c_1674222421.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_4d707ed6-7714-47a1-b623-c7494030126c_1674222421.jpg",
+            "slogan": "My reading will help you both personally and professionally.",
+            "description": "I am an astrologer and a reader with 15 years of experience. I do accurate readings about love, relationships, career, etc. Related to your personal life, I will answer your questions about love and relationships, such as: When will I find true love?/ What will be the personality and nature of my partner?/ Where will I meet my partner?/ How can I improve my relationship with my partner?/ Will I get my ex back? Related to your professional life, you can get answers to questions like:  When will I get a new job?/ Is this the right time for a change?/ What is a suitable career option for me? I can assure you that you will like my reading.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 16,
+            "feedback_count": 325,
+            "review_count": 325,
+            "total_orders": 3004,
+            "sort_order": 77,
+            "joined_time": 1679926630,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 4,
+                    "name": "Business"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 6,
+                    "name": "Family"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 2,
+                    "name": "Numerology"
+                },
+                {
+                    "id": 4,
+                    "name": "Psychic"
+                },
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": "https://astrocrmmedia.obrio.net/videos/production/video_4d707ed6-7714-47a1-b623-c7494030126c.mp4"
+            },
+            "user_id": 71,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 10,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.69,
+                    "limit": 1,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "offline"
+        },
+        {
+            "id": "9f275946-901f-42c5-97cd-4308d4c7a552",
+            "name": "Manish",
+            "astrology_type": "vedic",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_31efad47-b993-4d11-a0d5-34435ce94681_1674211436.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_31efad47-b993-4d11-a0d5-34435ce94681_1674211436.jpg",
+            "slogan": "I will walk the path together with you, channeling the divine messages for you while guiding you and helping you achieve your goals!",
+            "description": "I am Manish an Astrologer, a Psychic Reader, a K.P.Astrologer, a Tarot Reader, and a Numerologist.  I have been giving advice and directions to my valuable clients on issues related to love, relationships, marriage, career, business, finance, education, etc. for the last 24 years. Whatsmore, my Zodiac Forecast is being published in 25 international magazines regularly. I try to instill into my clients a positive attitude so that they are able to embark on their life path with a positive state of mind. My psychic insight has helped my clients resolve their deepest concerns in love, relationships, and marital life. My insight on their career path, finances, investment, and spiritual journey has helped them resolve their major dilemmas. I am hoping to have constructive and meaningful interactions with you on this wonderful platform. Blessings all the way.",
+            "description_experience": "",
+            "rating": 4.9,
+            "experience": 25,
+            "feedback_count": 766,
+            "review_count": 766,
+            "total_orders": 18554,
+            "sort_order": 197,
+            "joined_time": 1679926625,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 4,
+                    "name": "Business"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 6,
+                    "name": "Family"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 2,
+                    "name": "Numerology"
+                },
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 4,
+                    "name": "Psychic"
+                },
+                {
+                    "id": 6,
+                    "name": "Occult readings"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": "https://astrocrmmedia.obrio.net/videos/production/video_31efad47-b993-4d11-a0d5-34435ce94681.mp4"
+            },
+            "user_id": 83,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 25,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 4.69,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        },
+        {
+            "id": "d9508c5a-ac14-4b9f-abe2-c4d61dacd8eb",
+            "name": "Sheron",
+            "astrology_type": "western",
+            "image": "https://astrocrmmedia.obrio.net/photos/production/image_783f1148-bc54-44a1-88d1-f36a76eed853_1674213769.jpg",
+            "image_mini": "https://astrocrmmedia.obrio.net/photos/production/image_783f1148-bc54-44a1-88d1-f36a76eed853_1674213769.jpg",
+            "slogan": "I will do my best to help you. If you are stuck at any point in your life, you can come to me and ask me for help and I will provide you with deep and honest insights.",
+            "description": "Welcome to my profile. I am a certified Psychologist and an astrologer as well.\r\n\r\nI specialize in Love-life, matters of heart, breakup issues, relationship issues, marriage, work-life, family, career counseling, and life coaching. A reading with me will bring you peace of mind and clarity.\r\n\r\nI have been practicing from a very young age. With the help of the spiritual powers, I am able to help people and my insights are honest but caring. I will answer all of your questions to the best of my knowledge. I have more than four years of experience in the astrology industry with a very good reputation. I have a lot of satisfied clients from all over the world. \r\n\r\nPlease feel free to connect with me.",
+            "description_experience": "",
+            "rating": 4.8,
+            "experience": 5,
+            "feedback_count": 83,
+            "review_count": 83,
+            "total_orders": 577,
+            "sort_order": 457,
+            "joined_time": 1679926681,
+            "focuses": [
+                {
+                    "id": 1,
+                    "name": "Love"
+                },
+                {
+                    "id": 2,
+                    "name": "Relationship"
+                },
+                {
+                    "id": 3,
+                    "name": "Career"
+                },
+                {
+                    "id": 4,
+                    "name": "Business"
+                },
+                {
+                    "id": 5,
+                    "name": "Financial"
+                },
+                {
+                    "id": 6,
+                    "name": "Family"
+                },
+                {
+                    "id": 7,
+                    "name": "Life coaching"
+                },
+                {
+                    "id": 8,
+                    "name": "Personal development"
+                },
+                {
+                    "id": 9,
+                    "name": "Spiritual development"
+                }
+            ],
+            "languages": [
+                {
+                    "code": "en",
+                    "name": "English",
+                    "native_name": "English"
+                }
+            ],
+            "specializations": [
+                {
+                    "id": 2,
+                    "name": "Numerology"
+                },
+                {
+                    "id": 3,
+                    "name": "Tarot reading"
+                },
+                {
+                    "id": 4,
+                    "name": "Psychic"
+                },
+                {
+                    "id": 5,
+                    "name": "Clairvoyance"
+                },
+                {
+                    "id": 6,
+                    "name": "Occult readings"
+                },
+                {
+                    "id": 7,
+                    "name": "Angel readings"
+                },
+                {
+                    "id": 8,
+                    "name": "Spirituality"
+                }
+            ],
+            "certificates": [],
+            "offers": [],
+            "video": {
+                "src": null
+            },
+            "user_id": 110,
+            "supply_type": {
+                "id": 2,
+                "type": "marketplace supply"
+            },
+            "chat_offers": [
+                {
+                    "type": "offline",
+                    "price": 7.99,
+                    "limit": 15,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 0
+                },
+                {
+                    "type": "online",
+                    "price": 3.99,
+                    "limit": 2,
+                    "limit_is_exhausted": false,
+                    "offer": null,
+                    "trial_minutes": 3
+                }
+            ],
+            "subscription": {
+                "type": "never"
+            },
+            "is_personal": false,
+            "is_followed": false,
+            "status": "online"
+        }
+    ]
+}
