@@ -1,23 +1,21 @@
-export const getUniqueSpecializations = (
-  astrologers: { specializations: { id: number; name: string }[] }[],
-) => {
-  const uniqueSpecializations = astrologers.reduce((uniqueSpecs, user) => {
-    user.specializations.forEach((spec) => {
-      uniqueSpecs.add(spec);
-    });
-    return uniqueSpecs;
-  }, new Set<{ id: number; name: string }>());
+type Item = { id: number; name: string };
 
-  return Array.from(uniqueSpecializations);
+function getUniqueItems<T>(astrologers: { [key: string]: T[] }[], key: string): Item[] {
+  const uniqueItems = new Set<string>();
+
+  for (const astrologer of astrologers) {
+    for (const item of astrologer[key]) {
+      uniqueItems.add(JSON.stringify(item));
+    }
+  }
+
+  return Array.from(uniqueItems).map<Item>((item) => JSON.parse(item));
+}
+
+export const getUniqueSpecializations = (astrologers: { specializations: Item[] }[]) => {
+  return getUniqueItems(astrologers, 'specializations');
 };
 
-export const getUniqueFocuses = (astrologers: { focuses: { id: number; name: string }[] }[]) => {
-  const uniqueSpecializations = astrologers.reduce((uniqueSpecs, user) => {
-    user.focuses.forEach((spec) => {
-      uniqueSpecs.add(spec);
-    });
-    return uniqueSpecs;
-  }, new Set<{ id: number; name: string }>());
-
-  return Array.from(uniqueSpecializations);
+export const getUniqueFocuses = (astrologers: { focuses: Item[] }[]) => {
+  return getUniqueItems(astrologers, 'focuses');
 };
