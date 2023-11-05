@@ -6,10 +6,10 @@ import { AstrologersTableBody } from './astrologers-table-body.tsx';
 import { AstrologersTableHeader } from './astrologers-table-header.tsx';
 import { AstrologersTableFilters } from './astrologers-table-filters.tsx';
 import { astrologersAction } from '../../store/astrologers';
-import { getSortedAstrologers } from '../../store/astrologers/astrologers.selector.ts';
+import { getFilteredAndSortedAstrologers } from '../../store/astrologers/astrologers.selector.ts';
 
 export function AstrologersTable() {
-  const astrologersList = useSelector(getSortedAstrologers);
+  const astrologersList = useSelector(getFilteredAndSortedAstrologers);
   const dispatch = useDispatch();
 
   const handleUpdateFilters = (key: string, value: string | number | number[] | undefined) => {

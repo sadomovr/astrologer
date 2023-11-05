@@ -2,7 +2,7 @@ import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import { Avatar } from '../../shared/ui/avatar';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 type AstrologersTableBodyProps = {
   data: {
@@ -31,6 +31,14 @@ export const AstrologersTableBody = ({
   data,
   handleRemoveAstrologer,
 }: AstrologersTableBodyProps) => {
+  if (!data.length) {
+    return (
+      <TableBody>
+        <Typography>No data</Typography>
+      </TableBody>
+    );
+  }
+
   return (
     <TableBody>
       {data.map((astrologer) => (
