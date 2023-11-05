@@ -74,7 +74,7 @@ export const getFilteredAstrologers = (
       continue;
     }
 
-    if (filters.status && isStatusMatch(astrologer.status, filters.status)) {
+    if (filters.status && !isStatusMatch(astrologer.status, filters.status)) {
       continue;
     }
 

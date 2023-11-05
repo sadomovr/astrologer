@@ -35,4 +35,17 @@ interface DeleteAstrologerAction {
   payload: string;
 }
 
-export type AstrologersAction = UpdateFiltersAction | DeleteAstrologerAction | UpdateSortingAction;
+interface UpdateAstrologersFromURL {
+  type: astrologersAction.UPDATE_STATE_FROM_URL;
+  payload: {
+    filters: Partial<Filters>;
+    orderByKey?: AstrologersState['orderByKey'];
+    orderByValue?: AstrologersState['orderByValue'];
+  };
+}
+
+export type AstrologersAction =
+  | UpdateFiltersAction
+  | DeleteAstrologerAction
+  | UpdateSortingAction
+  | UpdateAstrologersFromURL;

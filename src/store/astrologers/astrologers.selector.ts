@@ -8,3 +8,13 @@ export const getFilteredAndSortedAstrologers = (state: RootState): Astrologer[] 
 
   return getSortedAstrologers(filteredAstrologers, orderByValue, orderByKey);
 };
+
+export const getAstrologersFilters = (state: RootState) => {
+  return {
+    filters: state.astrologers.filters,
+    orderByValue: state.astrologers.orderByValue,
+    orderByKey: state.astrologers.orderByKey,
+    availableFocuses: state.astrologers.availableFocuses,
+    availableSpecializations: state.astrologers.availableSpecializations,
+  };
+};

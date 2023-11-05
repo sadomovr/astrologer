@@ -49,6 +49,18 @@ export const astrologersReducer = (
       return {
         ...state,
       };
+    case astrologersAction.UPDATE_STATE_FROM_URL:
+      return {
+        ...state,
+        filters: {
+          name: action.payload.filters.name || state.filters.name,
+          specializations: action.payload.filters.specializations || state.filters.specializations,
+          focuses: action.payload.filters.focuses || state.filters.focuses,
+          status: action.payload.filters.status || state.filters.status,
+        },
+        orderByKey: action.payload.orderByKey || state.orderByKey,
+        orderByValue: action.payload.orderByValue || state.orderByValue,
+      };
     default:
       return state;
   }
