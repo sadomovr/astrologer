@@ -11,7 +11,8 @@ export interface Filters {
 export type AstrologersState = {
   data: Astrologer[];
   filters: Filters;
-  orderBy: 'status' | 'rating' | 'price';
+  orderByKey: 'status' | 'rating' | 'price';
+  orderByValue: 'ASC' | 'DESC';
   availableSpecializations: { id: number; name: string }[];
   availableFocuses: { id: number; name: string }[];
 };
@@ -26,7 +27,7 @@ interface UpdateFiltersAction {
 
 interface UpdateSortingAction {
   type: astrologersAction.UPDATE_SORTING;
-  payload: AstrologersState['orderBy'];
+  payload: AstrologersState['orderByKey'];
 }
 
 interface DeleteAstrologerAction {

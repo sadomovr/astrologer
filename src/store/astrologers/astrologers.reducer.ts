@@ -10,7 +10,8 @@ const initialState: AstrologersState = {
     specializations: [],
     status: undefined,
   },
-  orderBy: 'status',
+  orderByKey: 'status',
+  orderByValue: 'DESC',
   availableSpecializations: getUniqueSpecializations(astro.data),
   availableFocuses: getUniqueFocuses(astro.data),
 };
@@ -23,11 +24,27 @@ export const astrologersReducer = (
     case astrologersAction.UPDATE_FILTER:
       return {
         ...state,
+        filters: {
+          ...state.filters,
+          [action.payload.key]: action.payload.value,
+        },
       };
-    case astrologersAction.UPDATE_SORTING:
+    case astrologersAction.UPDATE_SORTING: {
+      const { orderByKey, orderByValue } = state;
+
+      if (action.payload === orderByKey) {
+        return {
+          ...state,
+          orderByValue: orderByValue === 'DESC' ? 'ASC' : 'DESC',
+        };
+      }
+
       return {
         ...state,
+        orderByKey: action.payload,
+        orderByValue: 'ASC',
       };
+    }
     case astrologersAction.DELETE_ASTROLOGER:
       return {
         ...state,
