@@ -29,7 +29,6 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
   };
 
   const handleChangeMultiple = (event: SelectChangeEvent<(string | number)[]>) => {
-    console.log(event.target.value);
     if (event.target.value.includes('all')) {
       handleUpdateFilters(event.target.name, []);
 
