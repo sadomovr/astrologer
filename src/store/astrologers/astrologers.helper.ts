@@ -23,8 +23,8 @@ export const getUniqueFocuses = (astrologers: { focuses: Item[] }[]) => {
 };
 
 export const sortingByStatus = (
-  a: { user_id: number; status: string },
-  b: { user_id: number; status: string },
+  a: AstrologerWithDelete,
+  b: AstrologerWithDelete,
   modifier: 1 | -1,
 ) => {
   if (a.status === 'online' && b.status === 'offline') {
@@ -37,13 +37,17 @@ export const sortingByStatus = (
   return b.user_id - a.user_id;
 };
 
-export const sortingByRating = (a: { rating: number }, b: { rating: number }, modifier: 1 | -1) => {
+export const sortingByRating = (
+  a: AstrologerWithDelete,
+  b: AstrologerWithDelete,
+  modifier: 1 | -1,
+) => {
   return (a.rating - b.rating) * modifier;
 };
 
 export const sortingByPrice = (
-  a: { chat_offers: { type: string; price: number }[] },
-  b: { chat_offers: { type: string; price: number }[] },
+  a: AstrologerWithDelete,
+  b: AstrologerWithDelete,
   modifier: 1 | -1,
 ) => {
   const findOnlineChat = (chat: { type: string }) => chat.type === 'online';
@@ -126,7 +130,7 @@ export const statusConverter = (status: number) => {
   return 'offline';
 };
 
-export const isNameMatch = (astrologer: { name: string }, name: string) => {
+export const isNameMatch = (astrologer: AstrologerWithDelete, name: string) => {
   if (!name) {
     return true;
   }
@@ -135,7 +139,7 @@ export const isNameMatch = (astrologer: { name: string }, name: string) => {
   return regexPattern.test(astrologer.name);
 };
 
-export const areFocusesIncludes = (focuses: { id: number }[], filter: number[]) => {
+export const areFocusesIncludes = (focuses: AstrologerWithDelete['focuses'], filter: number[]) => {
   if (!filter.length) {
     return true;
   }
@@ -143,7 +147,10 @@ export const areFocusesIncludes = (focuses: { id: number }[], filter: number[]) 
   return filter.every((focusId) => focuses.some((focus) => focus.id === focusId));
 };
 
-export const areSpecializationsIncluded = (specializations: { id: number }[], filter: number[]) => {
+export const areSpecializationsIncluded = (
+  specializations: AstrologerWithDelete['specializations'],
+  filter: number[],
+) => {
   if (!filter.length) {
     return true;
   }

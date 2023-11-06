@@ -1,27 +1,10 @@
 import TableBody from '@mui/material/TableBody';
 import { Typography } from '@mui/material';
 import { AstrologersTableItem } from './astrologers-table-item.tsx';
+import { Astrologer } from '../../shared/types/astrologer.ts';
 
 type AstrologersTableBodyProps = {
-  data: {
-    id: string;
-    user_id: number;
-    image_mini: string;
-    name: string;
-    supply_type: {
-      type: string;
-    };
-    astrology_type: string;
-    chat_offers: {
-      price: number;
-      type: string;
-    }[];
-    specializations: { name: string }[];
-    rating: number;
-    focuses: { name: string }[];
-    languages: { native_name: string }[];
-    status: string;
-  }[];
+  data: Astrologer[];
   handleRemoveAstrologer: (id: string) => void;
 };
 
@@ -42,8 +25,8 @@ export const AstrologersTableBody = ({
       {data.map((astrologer) => (
         <AstrologersTableItem
           key={astrologer.id}
+          astrologer={astrologer}
           handleRemoveAstrologer={handleRemoveAstrologer}
-          {...astrologer}
         />
       ))}
     </TableBody>
