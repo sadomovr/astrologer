@@ -2,7 +2,7 @@ import { useState } from 'react';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import { Avatar } from '../../shared/ui/avatar';
-import { Box } from '@mui/material';
+import { Box, Chip } from '@mui/material';
 import { Delete } from '@mui/icons-material';
 
 type AstrologersTableItemProps = {
@@ -69,7 +69,9 @@ export const AstrologersTableItem = ({
       <TableCell>{focuses.map((item) => item.name).join(', ')}</TableCell>
       <TableCell>{languages?.[0]?.native_name || ''}</TableCell>
       <TableCell>{specializations.map((item) => item.name).join(', ')}</TableCell>
-      <TableCell>{status}</TableCell>
+      <TableCell>
+        <Chip color={status === 'offline' ? 'error' : 'success'} label={status} />
+      </TableCell>
     </TableRow>
   );
 };

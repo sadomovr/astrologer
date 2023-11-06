@@ -28,7 +28,7 @@ export const AstrologersTableHeaderItem = ({
       onClick={() => isSortable && handleUpdateSorting(orderBy)}
       sx={{ cursor: isSortable ? 'pointer' : 'default' }}
     >
-      <Box display='flex' gap='10px'>
+      <Box display='flex' gap='10px' alignItems='center'>
         {label}
         {orderByKey === orderBy ? <OrderItem value={orderByValue} /> : null}
       </Box>
