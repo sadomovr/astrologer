@@ -1,6 +1,7 @@
 import { RootState } from '../index.ts';
 import { Astrologer } from '../../shared/types/astrologer.ts';
-import { getFilteredAstrologers, getSortedAstrologers } from './astrologers.helper.ts';
+import { getSortedAstrologers } from './astrologers.helper.ts';
+import { getFilteredAstrologers } from './astrologers.filter.tsx';
 
 export const getFilteredAndSortedAstrologers = (state: RootState): Astrologer[] => {
   const { data, filters, orderByKey, orderByValue } = state.astrologers;

@@ -1,27 +1,17 @@
-import { AstrologersFilters, AstrologerWithDelete } from './astrologers.types.ts';
+import { AstrologerWithDelete } from './astrologers.types.ts';
+import { getUniqueItemsByKey } from '../../shared/helpers/array.ts';
 
-type Item = { id: number; name: string };
-
-function getUniqueItems<T>(astrologers: { [key: string]: T[] }[], key: string): Item[] {
-  const uniqueItems = new Set<string>();
-
-  for (const astrologer of astrologers) {
-    for (const item of astrologer[key]) {
-      uniqueItems.add(JSON.stringify(item));
-    }
-  }
-
-  return Array.from(uniqueItems).map<Item>((item) => JSON.parse(item));
-}
-
-export const getUniqueSpecializations = (astrologers: { specializations: Item[] }[]) => {
-  return getUniqueItems(astrologers, 'specializations');
+export const getUniqueSpecializations = (
+  astrologers: { specializations: { id: number; name: string }[] }[],
+) => {
+  return getUniqueItemsByKey(astrologers, 'specializations');
 };
 
-export const getUniqueFocuses = (astrologers: { focuses: Item[] }[]) => {
-  return getUniqueItems(astrologers, 'focuses');
+export const getUniqueFocuses = (astrologers: { focuses: { id: number; name: string }[] }[]) => {
+  return getUniqueItemsByKey(astrologers, 'focuses');
 };
 
+// Sort by status and user_id value, from largest to smallest
 export const sortingByStatus = (
   a: AstrologerWithDelete,
   b: AstrologerWithDelete,
@@ -58,39 +48,7 @@ export const sortingByPrice = (
   return (aPrice - bPrice) * modifier;
 };
 
-export const getFilteredAstrologers = (
-  astrologers: AstrologerWithDelete[],
-  filters: AstrologersFilters,
-): AstrologerWithDelete[] => {
-  const filteredAstrologers: AstrologerWithDelete[] = [];
-
-  for (const astrologer of astrologers) {
-    if (astrologer.isDelete) {
-      continue;
-    }
-
-    if (!isNameMatch(astrologer, filters.name)) {
-      continue;
-    }
-
-    if (!areFocusesIncludes(astrologer.focuses, filters.focuses)) {
-      continue;
-    }
-
-    if (!areSpecializationsIncluded(astrologer.specializations, filters.specializations)) {
-      continue;
-    }
-
-    if (filters.status && !isStatusMatch(astrologer.status, filters.status)) {
-      continue;
-    }
-
-    filteredAstrologers.push(astrologer);
-  }
-
-  return filteredAstrologers;
-};
-
+// Sorting astrologers by key and ASC/DESC
 export const getSortedAstrologers = (
   astrologers: AstrologerWithDelete[],
   orderByValue: 'ASC' | 'DESC',
@@ -128,39 +86,4 @@ export const statusConverter = (status: number) => {
   }
 
   return 'offline';
-};
-
-export const isNameMatch = (astrologer: AstrologerWithDelete, name: string) => {
-  if (!name) {
-    return true;
-  }
-  const regexPattern = new RegExp(`^${name.replace(/\*/g, '.*')}`, 'i');
-
-  return regexPattern.test(astrologer.name);
-};
-
-export const areFocusesIncludes = (focuses: AstrologerWithDelete['focuses'], filter: number[]) => {
-  if (!filter.length) {
-    return true;
-  }
-
-  return filter.every((focusId) => focuses.some((focus) => focus.id === focusId));
-};
-
-export const areSpecializationsIncluded = (
-  specializations: AstrologerWithDelete['specializations'],
-  filter: number[],
-) => {
-  if (!filter.length) {
-    return true;
-  }
-
-  return filter.every((focusId) => specializations.some((focus) => focus.id === focusId));
-};
-export const isStatusMatch = (status: string, filter: number) => {
-  if (!filter) {
-    return true;
-  }
-
-  return status === statusConverter(filter);
 };
