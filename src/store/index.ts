@@ -1,12 +1,11 @@
-import { combineReducers, legacy_createStore as createStore } from 'redux';
-import { AstrologersState, astrologersReducer } from './astrologers';
+import { configureStore } from '@reduxjs/toolkit';
+import { astrologer } from './astrologers';
 
-const rootReducer = combineReducers({
-  astrologers: astrologersReducer,
+export const store = configureStore({
+  reducer: {
+    astrologers: astrologer.reducer,
+  },
 });
 
-export const store = createStore(rootReducer);
-
-export type RootState = {
-  astrologers: AstrologersState;
-};
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;

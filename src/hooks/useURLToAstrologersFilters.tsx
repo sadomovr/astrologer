@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { astrologersAction } from '../store/astrologers';
+import { astrologer } from '../store/astrologers';
+import { useAppDispatch } from './useAppDispatch.ts';
 
 export const useURLToAstrologersFilters = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -18,22 +18,21 @@ export const useURLToAstrologersFilters = () => {
       ? specializationsParam.split(',').map(Number)
       : undefined;
     const status = urlParams.get('status');
-    const orderByKey = urlParams.get('orderByKey');
-    const orderByValue = urlParams.get('orderByValue');
+    const orderByKey = urlParams.get('orderByKey') as 'status' | 'rating' | 'price';
+    const orderByValue = urlParams.get('orderByValue') as 'ASC' | 'DESC';
 
     // Dispatch actions to update Redux state
-    dispatch({
-      type: astrologersAction.UPDATE_STATE_FROM_URL,
-      payload: {
+    dispatch(
+      astrologer.actions.updateStateFromURL({
         filters: {
-          name,
+          name: name || undefined,
           focuses,
           specializations,
-          status,
+          status: status ? Number(status) : undefined,
         },
-        orderByKey,
-        orderByValue,
-      },
-    });
+        orderByKey: orderByKey || undefined,
+        orderByValue: orderByValue || undefined,
+      }),
+    );
   }, [dispatch]);
 };

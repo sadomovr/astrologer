@@ -1,4 +1,4 @@
-import { AstrologerWithDelete, Filters } from './astrologers.types.ts';
+import { AstrologersFilters, AstrologerWithDelete } from './astrologers.types.ts';
 
 type Item = { id: number; name: string };
 
@@ -60,7 +60,7 @@ export const sortingByPrice = (
 
 export const getFilteredAstrologers = (
   astrologers: AstrologerWithDelete[],
-  filters: Filters,
+  filters: AstrologersFilters,
 ): AstrologerWithDelete[] => {
   const filteredAstrologers: AstrologerWithDelete[] = [];
 

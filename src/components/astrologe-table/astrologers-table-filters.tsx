@@ -11,12 +11,17 @@ import {
 } from '@mui/material';
 import { ChangeEvent } from 'react';
 import Paper from '@mui/material/Paper';
+import {
+  AstrologersFiltersKey,
+  AstrologersState,
+  AstrologersFilters,
+} from '../../store/astrologers';
 
 type AstrologersTableFilters = {
-  handleUpdateFilters: (
-    key: string,
-    values: string | number | number[] | string[] | undefined,
-  ) => void;
+  handleUpdateFilters: (key: AstrologersFiltersKey, values: string | number | number[]) => void;
+  filters: AstrologersFilters;
+  availableSpecializations: AstrologersState['availableSpecializations'];
+  availableFocuses: AstrologersState['availableFocuses'];
 };
 
 export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTableFilters) => {
@@ -24,22 +29,22 @@ export const AstrologersTableFilters = ({ handleUpdateFilters }: AstrologersTabl
     (state: RootState) => state.astrologers,
   );
 
-  const handleChange = (event: SelectChangeEvent<number[] | string | number | undefined>) => {
-    handleUpdateFilters(event.target.name, event.target.value);
+  const handleChange = (event: SelectChangeEvent<number[] | string | number>) => {
+    handleUpdateFilters(event.target.name as AstrologersFiltersKey, event.target.value);
   };
 
   const handleChangeMultiple = (event: SelectChangeEvent<(string | number)[]>) => {
     if (event.target.value.includes('all')) {
-      handleUpdateFilters(event.target.name, []);
+      handleUpdateFilters(event.target.name as AstrologersFiltersKey, []);
 
       return;
     }
 
-    handleUpdateFilters(event.target.name, event.target.value as number[]);
+    handleUpdateFilters(event.target.name as AstrologersFiltersKey, event.target.value as number[]);
   };
 
   const handleChangeName = (event: ChangeEvent<HTMLInputElement>) => {
-    handleUpdateFilters(event.target.name, event.target.value);
+    handleUpdateFilters(event.target.name as AstrologersFiltersKey, event.target.value);
   };
 
   return (

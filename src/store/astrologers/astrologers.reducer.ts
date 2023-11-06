@@ -1,6 +1,11 @@
-import { astrologersAction, AstrologersAction, AstrologersState } from './';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { getUniqueFocuses, getUniqueSpecializations } from './astrologers.helper.ts';
 import astro from '../../mock/astrologers.json';
+import {
+  AstrologersState,
+  UpdateAstrologersFromURLPayload,
+  UpdateFiltersActionPayload,
+} from './astrologers.types.ts';
 
 const initialState: AstrologersState = {
   data: astro.data,
@@ -16,64 +21,51 @@ const initialState: AstrologersState = {
   availableFocuses: getUniqueFocuses(astro.data),
 };
 
-export const astrologersReducer = (
-  state = initialState,
-  action: AstrologersAction,
-): AstrologersState => {
-  switch (action.type) {
-    case astrologersAction.UPDATE_FILTER:
-      return {
-        ...state,
-        filters: {
-          ...state.filters,
-          [action.payload.key]: action.payload.value,
-        },
+const astrologersSlice = createSlice({
+  name: 'astrologers',
+  initialState,
+  reducers: {
+    updateFilter: (state, action: PayloadAction<UpdateFiltersActionPayload>) => {
+      const { key, value } = action.payload;
+      state.filters = {
+        ...state.filters,
+        [key]: value,
       };
-    case astrologersAction.UPDATE_SORTING: {
+    },
+    updateSorting: (state, action: PayloadAction<AstrologersState['orderByKey']>) => {
       const { orderByKey, orderByValue } = state;
 
       if (action.payload === orderByKey) {
-        return {
-          ...state,
-          orderByValue: orderByValue === 'DESC' ? 'ASC' : 'DESC',
-        };
+        state.orderByValue = orderByValue === 'DESC' ? 'ASC' : 'DESC';
+      } else {
+        state.orderByKey = action.payload;
+        state.orderByValue = 'ASC';
       }
-
-      return {
-        ...state,
-        orderByKey: action.payload,
-        orderByValue: 'ASC',
-      };
-    }
-    case astrologersAction.DELETE_ASTROLOGER: {
+    },
+    deleteAstrologer: (state, action: PayloadAction<string>) => {
       const index = state.data.findIndex(({ id }) => id === action.payload);
 
-      if (index === -1) {
-        return state;
+      if (index !== -1) {
+        state.data[index].isDelete = true;
       }
+    },
+    updateStateFromURL: (state, action: PayloadAction<UpdateAstrologersFromURLPayload>) => {
+      const { filters, orderByKey, orderByValue } = action.payload;
 
-      const newData = [...state.data];
-
-      newData[index].isDelete = true;
-
-      return {
-        ...state,
-        data: newData,
+      state.filters = {
+        name: filters.name || state.filters.name,
+        specializations: filters.specializations || state.filters.specializations,
+        focuses: filters.focuses || state.filters.focuses,
+        status: filters.status || state.filters.status,
       };
-    }
-    case astrologersAction.UPDATE_STATE_FROM_URL:
-      return {
-        ...state,
-        filters: {
-          name: action.payload.filters.name || state.filters.name,
-          specializations: action.payload.filters.specializations || state.filters.specializations,
-          focuses: action.payload.filters.focuses || state.filters.focuses,
-          status: action.payload.filters.status || state.filters.status,
-        },
-        orderByKey: action.payload.orderByKey || state.orderByKey,
-        orderByValue: action.payload.orderByValue || state.orderByValue,
-      };
-    default:
-      return state;
-  }
+
+      state.orderByKey = orderByKey || state.orderByKey;
+      state.orderByValue = orderByValue || state.orderByValue;
+    },
+  },
+});
+
+export const astrologer = {
+  actions: astrologersSlice.actions,
+  reducer: astrologersSlice.reducer,
 };
