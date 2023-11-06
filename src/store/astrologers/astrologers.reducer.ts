@@ -27,20 +27,19 @@ const astrologersSlice = createSlice({
   reducers: {
     updateFilter: (state, action: PayloadAction<UpdateFiltersActionPayload>) => {
       const { key, value } = action.payload;
-      state.filters = {
-        ...state.filters,
-        [key]: value,
-      };
+      state.filters = { ...state.filters, [key]: value };
     },
     updateSorting: (state, action: PayloadAction<AstrologersState['orderByKey']>) => {
       const { orderByKey, orderByValue } = state;
 
       if (action.payload === orderByKey) {
         state.orderByValue = orderByValue === 'DESC' ? 'ASC' : 'DESC';
-      } else {
-        state.orderByKey = action.payload;
-        state.orderByValue = 'ASC';
+
+        return state;
       }
+
+      state.orderByKey = action.payload;
+      state.orderByValue = 'ASC';
     },
     deleteAstrologer: (state, action: PayloadAction<string>) => {
       const index = state.data.findIndex(({ id }) => id === action.payload);
