@@ -1,8 +1,6 @@
 import TableBody from '@mui/material/TableBody';
-import TableRow from '@mui/material/TableRow';
-import TableCell from '@mui/material/TableCell';
-import { Avatar } from '../../shared/ui/avatar';
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+import { AstrologersTableItem } from './astrologers-table-item.tsx';
 
 type AstrologersTableBodyProps = {
   data: {
@@ -42,26 +40,11 @@ export const AstrologersTableBody = ({
   return (
     <TableBody>
       {data.map((astrologer) => (
-        <TableRow key={astrologer.id}>
-          <TableCell>{astrologer.user_id}</TableCell>
-          <TableCell>
-            <Avatar src={astrologer.image_mini} alt={astrologer.name} />
-          </TableCell>
-          <TableCell>
-            <Box>{astrologer.name}</Box>
-            <Box onClick={() => handleRemoveAstrologer(astrologer.id)}>Delete</Box>
-          </TableCell>
-          <TableCell>{astrologer.supply_type.type}</TableCell>
-          <TableCell>{astrologer.astrology_type}</TableCell>
-          <TableCell>
-            {astrologer.chat_offers.find((offer) => offer.type === 'online')?.price || ''}
-          </TableCell>
-          <TableCell>{astrologer.rating}</TableCell>
-          <TableCell>{astrologer.focuses.map((item) => item.name).join(', ')}</TableCell>
-          <TableCell>{astrologer.languages?.[0]?.native_name || ''}</TableCell>
-          <TableCell>{astrologer.specializations.map((item) => item.name).join(', ')}</TableCell>
-          <TableCell>{astrologer.status}</TableCell>
-        </TableRow>
+        <AstrologersTableItem
+          key={astrologer.id}
+          handleRemoveAstrologer={handleRemoveAstrologer}
+          {...astrologer}
+        />
       ))}
     </TableBody>
   );

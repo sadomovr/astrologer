@@ -45,10 +45,22 @@ export const astrologersReducer = (
         orderByValue: 'ASC',
       };
     }
-    case astrologersAction.DELETE_ASTROLOGER:
+    case astrologersAction.DELETE_ASTROLOGER: {
+      const index = state.data.findIndex(({ id }) => id === action.payload);
+
+      if (index === -1) {
+        return state;
+      }
+
+      const newData = [...state.data];
+
+      newData[index].isDelete = true;
+
       return {
         ...state,
+        data: newData,
       };
+    }
     case astrologersAction.UPDATE_STATE_FROM_URL:
       return {
         ...state,

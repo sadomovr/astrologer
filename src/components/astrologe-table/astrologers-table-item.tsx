@@ -1,37 +1,75 @@
+import { useState } from 'react';
+import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
-import { ArrowDownward, ArrowUpward } from '@mui/icons-material';
+import { Avatar } from '../../shared/ui/avatar';
 import { Box } from '@mui/material';
-
-const OrderItem = ({ value }: { value: 'ASC' | 'DESC' }) => {
-  return value === 'ASC' ? <ArrowUpward /> : value === 'DESC' ? <ArrowDownward /> : null;
-};
+import { Delete } from '@mui/icons-material';
 
 type AstrologersTableItemProps = {
-  label: string;
-  orderBy: 'rating' | 'status' | 'price' | null;
-  handleUpdateSorting: (orderBy: 'rating' | 'status' | 'price') => void;
-  orderByKey: string;
-  orderByValue: 'ASC' | 'DESC';
+  id: string;
+  user_id: number;
+  image_mini: string;
+  name: string;
+  supply_type: { type: string };
+  astrology_type: string;
+  chat_offers: { price: number; type: string }[];
+  rating: number;
+  focuses: { name: string }[];
+  languages: { native_name: string }[];
+  specializations: { name: string }[];
+  status: string;
+  handleRemoveAstrologer: (id: string) => void;
 };
 
 export const AstrologersTableItem = ({
-  label,
-  orderBy,
-  handleUpdateSorting,
-  orderByKey,
-  orderByValue,
+  id,
+  user_id,
+  image_mini,
+  name,
+  supply_type,
+  astrology_type,
+  chat_offers,
+  rating,
+  focuses,
+  languages,
+  specializations,
+  status,
+  handleRemoveAstrologer,
 }: AstrologersTableItemProps) => {
-  const isSortable = orderBy !== null;
+  const [hoveredName, setHoveredName] = useState<boolean>(false);
 
   return (
-    <TableCell
-      onClick={() => isSortable && handleUpdateSorting(orderBy)}
-      sx={{ cursor: isSortable ? 'pointer' : 'default' }}
-    >
-      <Box display='flex' gap='10px'>
-        {label}
-        {orderByKey === orderBy ? <OrderItem value={orderByValue} /> : null}
-      </Box>
-    </TableCell>
+    <TableRow>
+      <TableCell>{user_id}</TableCell>
+      <TableCell>
+        <Avatar src={image_mini} alt={name} />
+      </TableCell>
+      <TableCell
+        onMouseEnter={() => setHoveredName(true)}
+        onMouseLeave={() => setHoveredName(false)}
+      >
+        <Box>{name}</Box>
+        {hoveredName ? (
+          <Box
+            onClick={() => handleRemoveAstrologer(id)}
+            sx={{
+              cursor: 'pointer',
+              color: 'rgba(0,77,117,0.6)',
+            }}
+          >
+            <Delete fontSize='small' />
+            Delete
+          </Box>
+        ) : null}
+      </TableCell>
+      <TableCell>{supply_type.type}</TableCell>
+      <TableCell>{astrology_type}</TableCell>
+      <TableCell>{chat_offers.find((offer) => offer.type === 'online')?.price || ''}</TableCell>
+      <TableCell>{rating}</TableCell>
+      <TableCell>{focuses.map((item) => item.name).join(', ')}</TableCell>
+      <TableCell>{languages?.[0]?.native_name || ''}</TableCell>
+      <TableCell>{specializations.map((item) => item.name).join(', ')}</TableCell>
+      <TableCell>{status}</TableCell>
+    </TableRow>
   );
 };

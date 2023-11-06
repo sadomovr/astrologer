@@ -2,7 +2,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
-import { AstrologersTableItem } from './astrologers-table-item.tsx';
+import { AstrologersTableHeaderItem } from './astrologers-table-header-item.tsx';
 
 type AstrologersTableHeaderProps = {
   handleUpdateSorting: (orderBy: 'rating' | 'status' | 'price') => void;
@@ -29,7 +29,7 @@ export const AstrologersTableHeader = ({ handleUpdateSorting }: AstrologersTable
     <TableHead>
       <TableRow>
         {tableHeaders.map((header, index) => (
-          <AstrologersTableItem
+          <AstrologersTableHeaderItem
             key={index}
             label={header.label}
             orderBy={header.orderBy}

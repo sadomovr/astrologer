@@ -8,8 +8,12 @@ export interface Filters {
   status: number;
 }
 
+export interface AstrologerWithDelete extends Astrologer {
+  isDelete?: boolean;
+}
+
 export type AstrologersState = {
-  data: Astrologer[];
+  data: AstrologerWithDelete[];
   filters: Filters;
   orderByKey: 'status' | 'rating' | 'price';
   orderByValue: 'ASC' | 'DESC';

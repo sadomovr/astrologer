@@ -1,5 +1,4 @@
-import { Astrologer } from '../../shared/types/astrologer.ts';
-import { Filters } from './astrologers.types.ts';
+import { AstrologerWithDelete, Filters } from './astrologers.types.ts';
 
 type Item = { id: number; name: string };
 
@@ -56,12 +55,16 @@ export const sortingByPrice = (
 };
 
 export const getFilteredAstrologers = (
-  astrologers: Astrologer[],
+  astrologers: AstrologerWithDelete[],
   filters: Filters,
-): Astrologer[] => {
-  const filteredAstrologers: Astrologer[] = [];
+): AstrologerWithDelete[] => {
+  const filteredAstrologers: AstrologerWithDelete[] = [];
 
   for (const astrologer of astrologers) {
+    if (astrologer.isDelete) {
+      continue;
+    }
+
     if (!isNameMatch(astrologer, filters.name)) {
       continue;
     }
@@ -85,11 +88,11 @@ export const getFilteredAstrologers = (
 };
 
 export const getSortedAstrologers = (
-  astrologers: Astrologer[],
+  astrologers: AstrologerWithDelete[],
   orderByValue: 'ASC' | 'DESC',
   orderByKey: string,
-): Astrologer[] => {
-  const compareFunction = (a: Astrologer, b: Astrologer) => {
+): AstrologerWithDelete[] => {
+  const compareFunction = (a: AstrologerWithDelete, b: AstrologerWithDelete) => {
     const modifier = orderByValue === 'ASC' ? 1 : -1;
 
     if (orderByKey === 'status') {
